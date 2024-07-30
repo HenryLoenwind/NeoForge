@@ -177,11 +177,13 @@ public final class BuildCreativeModeTabContentsEvent extends Event implements IM
         }
     }
 
-    static boolean isParentTab(CreativeModeTab.TabVisibility visibility) {
+    @ApiStatus.Internal
+    public static boolean isParentTab(CreativeModeTab.TabVisibility visibility) {
         return visibility == CreativeModeTab.TabVisibility.PARENT_TAB_ONLY || visibility == CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS;
     }
 
-    static boolean isSearchTab(CreativeModeTab.TabVisibility visibility) {
+    @ApiStatus.Internal
+    public static boolean isSearchTab(CreativeModeTab.TabVisibility visibility) {
         return visibility == CreativeModeTab.TabVisibility.SEARCH_TAB_ONLY || visibility == CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS;
     }
 
