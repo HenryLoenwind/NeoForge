@@ -23,7 +23,7 @@
  
              this.setDeltaMovement(this.getDeltaMovement().scale(0.98));
 +            if (isAlive() && block instanceof net.neoforged.neoforge.common.extensions.IFallableExtension feblock) {
-+                feblock.onStillFalling(level(), blockPosition(), this);
++                feblock.fallingTick(level(), blockPosition(), this);
 +            }
          }
      }

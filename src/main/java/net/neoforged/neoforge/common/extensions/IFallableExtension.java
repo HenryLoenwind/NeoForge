@@ -20,5 +20,5 @@ public interface IFallableExtension {
      * @param currentPosition The current position of the entity as a {@link BlockPos}.
      * @param entity          The falling entity.
      */
-    default void onStillFalling(Level level, BlockPos currentPosition, FallingBlockEntity entity) {}
+    default void fallingTick(Level level, BlockPos currentPosition, FallingBlockEntity entity) {}
 }
